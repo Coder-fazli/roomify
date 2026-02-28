@@ -49,7 +49,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 interface AuthState {
   isSignedIn: boolean;
-  username: string | null;
+  userName: string | null;
   userId: string | null;
 }
 
@@ -68,7 +68,7 @@ export default function App() {
 
         setAuthState({
           isSignedIn: !!user,
-          username: user?.username || null,
+          userName: user?.username || null,
           userId: user?.uuid || null,
         });
 
